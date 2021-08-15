@@ -1,8 +1,8 @@
-#HTML Slides Element
+# HTML Slides Element
 Simple 3-slides view element in elegant lines style
-##Setup
+## Setup
 Include `<script src="slides.js>` in head or end of body. Style is included to slides.js so you don't need to include this manually.
-##Using slides component
+## Using slides component
 ```html
 <app-slides>
     <div class="slide">
@@ -26,7 +26,7 @@ Include `<script src="slides.js>` in head or end of body. Style is included to s
 </app-slides>
 ```
 ![Example-1 preview](readme-example-1.PNG)
-##Control slides with javascript
+## Control slides with javascript
 ```javascript
 slides = document.getElementById('test-slides-gallery');
 
@@ -64,7 +64,7 @@ slides.animating; // boolean: running | paused
 slides.borderLineLength; // string
 ```
 
-##Changing style
+## Changing style
 ```css
 #test-slides-gallery {
     width: 70vw;
