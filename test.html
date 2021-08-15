@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <title>Slides element</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Mateusz Bilicz https://mateuszbilicz.pl/">
+    <meta name="description" content="Simple 3-slides view in elegant lines style">
+    <style>
+        body {
+            background-color: #000;
+            font-family: Roboto, "Helvetica Neue", Helvetica;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #test-slides-gallery {
+            width: 70vw;
+            height: 30vw;
+            --line-alpha: .7;
+        }
+    </style>
+    <script src="slides.js"></script>
+</head>
+<body>
+    <app-slides id="test-slides-gallery">
+            <div class="slide">
+                <div style="position: relative;padding: 1cm;width: calc(100% - 2cm); max-height: calc(100% - 2cm);">
+                    <h1 style="padding: 0; margin: 0;">Hello world!</h1>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://cdn.pixabay.com/photo/2021/08/03/11/48/canal-6519196_960_720.jpg" style="border: 0; width: 100%; height: 100%" alt="image-1">
+            </div>
+            <div class="slide">
+                <img src="https://cdn.pixabay.com/photo/2020/11/04/17/11/architecture-5713016_960_720.jpg" style="border: 0; width: 100%; height: 100%" alt="image-2">
+            </div>
+    </app-slides>
+</body>
+<script>
+    let slides = document.getElementById('test-slides-gallery');
+    slides.addEventListener('click', () => {
+        slides.galleryClick();
+    });
+</script>
+</html>
