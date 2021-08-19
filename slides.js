@@ -135,7 +135,7 @@ app-slides .container .slide:nth-child(1){left:calc((var(--slide) - 1) * -100%)}
 app-slides .container .slide:nth-child(2){top:-100%;left:calc(100% + (var(--slide) - 1) * -100%)}
 app-slides .container .slide:nth-child(3){top:-200%;left:calc(200% + (var(--slide) - 1) * -100%)}`;
     let styleElement = document.createElement('style');
-    styleElement.setAttribute('name', 'window-element-style');
+    styleElement.setAttribute('name', 'slides-element-style');
     styleElement.innerHTML = style;
     if (window.body) {
         // this activates when you place script on body end
